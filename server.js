@@ -15,9 +15,9 @@ app.use("/post", require("./express-food/post"));
 
 
 
-// app.get('/', (req, res) => {
-//   res.json('server is working');
-// });
+app.get('/test', (req, res) => {
+  res.json('server is working');
+});
 
 
 
