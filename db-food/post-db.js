@@ -6,10 +6,10 @@ const db =require("../database")
 
 let creatdefult = (cb) => {
   db.fooddata.create(
-    {namefood: "xgfbhfzdb",
-      amount:"Strid\sfzdfhhgng",
-      description: "xfyjchjbString",
-      location:"chnmghvString",
+    {namefood: "mansaf",
+      amount:"2",
+      description: "with chickens",
+      location:"Amman",
       file:'',
       imageUrl:"",
       booking: true,
