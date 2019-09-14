@@ -23,6 +23,7 @@ let creatdefult = (cb) => {
   })
 }
 
+
 let creatpost = (newPost,cb) => {
   console.log('newPost', newPost)
   db.fooddata.create(newPost,(err, data) => {
