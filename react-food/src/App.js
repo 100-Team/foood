@@ -20,7 +20,7 @@ export default class App extends Component {
      Home:"/sign-in"
     };
   
-    ////////////ahmad/////signup
+    /////////ahmad///signup
 newuser=(firstName,lastName,phone,email,password,e)=>{
       e.preventDefault();
       axios.post(`/user/${firstName}/${lastName}/${phone}/${email}/${password}`)
