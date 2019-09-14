@@ -8,7 +8,7 @@ export default class Counter extends Component {
   }
 
   componentWillMount(){
-    axios.get('http://localhost:9000/post/all')
+    axios.get('/post/all')
     .then(res => this.setState({counter: res.data.length}))
     .catch(err => console.log(err))
   }

@@ -1,34 +1,17 @@
 import React, { Component } from "react";
-//import { BrowserRouter as Router, Route,Link } from 'react-router-dom';
 import "../App.css";
-// let Background = '../home/owner/Downloads/output.png'
+
+
 export default class About extends Component{
-  // state = {
-  //   videoURL: './home/owner/Downloads/Backyard_4K_Living_Background.mp4'
-  // }
-  
   render(){
   return(
     <div className="about">
-    {/* <video id="background-video" loop autoPlay>
-                <source src={this.state.videoURL} type="video/mp4" />
-                <source src={this.state.videoURL} type="video/ogg" />
-                Your browser does not support the video tag.
-            </video> */}
  <div 
  style={{
-   //margin: '0 auto',
-   //marginTop: '80px',
    width: '50%',
-   //border: '3px solid #BAAFC4', 
    padding: '58px', 
    paddingBottom:"1px",
-   //borderRadius: '10px',
    fontSize: '1.5em' ,
-   //backgroundColor:"white",
-  // opacity:"0.5",
-
-  //  backgroundImage: `url(${Background})`
   }} >
     <h1 style={{
       fontFamily: 'Acme, sans-serif', 

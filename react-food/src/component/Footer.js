@@ -4,17 +4,13 @@ import "../App.css";
 export default class Footer extends Component {
     render() {
         const footer= {
-            // position: "fixed",
             left: "0",
             bottom: "0",
             width: "100%",             
             backgroundColor: "black",
             color : "white",
             textAlign : "center",
-            // opacity:"0.5",
-           //  display: 'flex', 
-            // alignContent: 'flex-end',
-           // fixed:"bottom"
+        
          }
         return (
 //             <div style={footer}>
@@ -26,8 +22,6 @@ export default class Footer extends Component {
 //                         FoodDonater@FoodDonater.com</a></p>
 //                 </footer>
 //             </div>
-
-
 //              
 
 <div className="footer" style={footer}>
