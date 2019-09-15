@@ -57,7 +57,8 @@ console.log("REACT", user)
     axios
     .post(`/user/signIn`, user)
     .then(response => {
-          console.log("React:get response.data", response.data.length >= 1 ? true : false);
+          console.log("React:get response.data", response.data.length >= 1 ? window.location = this.state.linkLogin : alert( `the email or password is incorrect`)
+          );
           if(response.data.length === 0)
           {
             let formError ={...this.state.formErrors} 
@@ -66,7 +67,7 @@ console.log("REACT", user)
 
           }
 
-            window.location = this.state.linkLogin;
+            // window.location = this.state.linkLogin;
            
 
 
