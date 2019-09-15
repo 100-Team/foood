@@ -37,7 +37,7 @@ update=(bookedup)=>{
          
          return (
            <div key={key} className="col-4" style={{ marginTop:"30px" ,display:"flex" , justifyContent:"space-around"}} >
-           <div className="card hoverr" style={{ width: "25rem",border: 'solid 1px black',borderRadius:"10px", backgroundColor:"#F5FEFE"
+           <div className="card hoverr" style={{ width: "25rem",borderRadius:"10px", backgroundColor:"#F5FEFE"
  }}>
              <img src={post.imageUrl}  className="card-img-top" alt="" style={{ height: "17rem", }}/>
              <div className="card-body" style={{textAlign:"right" }}  >
