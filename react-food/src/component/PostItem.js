@@ -37,7 +37,7 @@ update=(bookedup)=>{
          return (
            <div key={key} className="col-4" style={{ marginTop:"30px" ,display:"flex" , justifyContent:"space-around"}} >
            <div className="card" style={{ width: "25rem",border: 'solid 1px black' }}>
-             <img src={post.imageUrl}  className="card-img-top" alt=""/>
+             <img src={post.imageUrl}  className="card-img-top" alt="" style={{ height: "17rem", }}/>
              <div className="card-body" style={{textAlign:"right" }}  >
                <h5 className="card-title">{post.namefood}</h5>
                <p className="card-text"><span style={{color:"gray",fontSize:"13px" }} > {post.description}</span>  </p>
