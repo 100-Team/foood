@@ -33,7 +33,7 @@ export default class Footer extends Component {
               <a href='#'><i className="fa fa-rss fa-3x fa-fw"></i></a>
               <a href='#'><i className="fa fa-linkedin fa-3x fa-fw"></i></a>
         <p>Contact information: <a href="mailto:someone@example.com">
-                        someone@example.com</a>.</p>
+        editorial@ourfood.com</a>.</p>
 </div>          
 
 </div>

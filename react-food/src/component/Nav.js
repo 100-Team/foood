@@ -9,8 +9,8 @@ export default function Nav() {
           <>
 
 <nav className="navbar navbar-expand-lg navbar-light bg-light row">
- <h1 className="col-4" >Hungry Free</h1>
- <div className="col-4" ><div className="spinner-grow text-primary" role="status">
+ <h1 className="col-4" >Hunger Free</h1>
+ {/* <div className="col-4" ><div className="spinner-grow text-primary" role="status">
   <span className="sr-only">Loading...</span>
 </div>
 <div className="spinner-grow text-secondary" role="status">
@@ -33,7 +33,7 @@ export default function Nav() {
 </div>
 <div className="spinner-grow text-light" role="status">
   <span className="sr-only">Loading...</span>
-</div></div>
+</div></div> */}
 
 <div className="collapse navbar-collapse row" id="navbarNav">
 <ul className="navbar-nav">
