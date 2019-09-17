@@ -19,7 +19,7 @@ export default class PostItem extends Component {
      });
  }
 
-update=(bookedup)=>{
+update=(bookedup,name,phone)=>{
   axios.put(`/post/${bookedup}`)
   .then(res => {
     this.setState({ posts: res.data });
@@ -28,6 +28,9 @@ update=(bookedup)=>{
   .catch(err => {
     console.log(err);
   });
+
+  alert( `name: ${name} 
+  phone: ${phone} `)
 }
 
  render() {
@@ -49,7 +52,7 @@ update=(bookedup)=>{
                <li className="list-group-item"style={{ backgroundColor:"#F5FEFE"  }}> <span style={{color:"gray"}} >location: </span> {post.location}</li>
                </ul>
                <div className="card-body" >
-              <button className="btn btn-dark" onClick={this.update.bind(this,post._id)}  style={{width:"100%" , color:(post.booking)?"#bae637":"red"  }}  >BOOKING</button>
+              <button className="btn btn-dark" onClick={this.update.bind(this,post._id,post.firstName,post.phone)}  style={{width:"100%" , color:(post.booking)?"#bae637":"red"  }}  >BOOKING</button>
                </div>
                </div>{post.booking}
              </div>

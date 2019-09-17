@@ -44,21 +44,20 @@ export class SignIn extends Component {
       password:this.state.password
     }
 
-    if (formValid(this.state)) {
-      console.log(`
-      --SUBMITTING--
-      Email: ${this.state.email}
-      Password: ${(this.state.password)}
-      `);
-    } else {
-      console.error("FORM INVALID - DISPLAY ERROR MESSAGE");
-    }
-console.log("REACT", user)
+    // if (formValid(this.state)) {
+    //   console.log(`
+    //   --SUBMITTING--
+    //   Email: ${this.state.email}
+    //   Password: ${(this.state.password)}
+    //   `);
+    // } else {
+    //   console.error("FORM INVALID - DISPLAY ERROR MESSAGE");
+    // }
+// console.log("REACT", user)
     axios
     .post(`/user/signIn`, user)
     .then(response => {
-          console.log("React:get response.data", response.data.length >= 1 ? window.location = this.state.linkLogin : false
-          );
+          // console.log("React:get response.data", response.data.length >= 1 ? window.location = this.state.linkLogin : false );
           if(response.data.length === 0)
           {
             let formError ={...this.state.formErrors} 
@@ -68,7 +67,10 @@ console.log("REACT", user)
           }
 
             // window.location = this.state.linkLogin;
-           
+            this.props.history.push({
+              pathname: '/input',
+              state: response.data // you recieve as this.props.location.state
+            })
 
 
 
