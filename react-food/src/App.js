@@ -25,8 +25,18 @@ newuser=(firstName,lastName,phone,email,password,e)=>{
       e.preventDefault();
       axios.post(`/user/${firstName}/${lastName}/${phone}/${email}/${password}`)
       .then(response => {
+
+        if(response.data.length === 0)
+          {
+        alert('please fill your info')
+      }
+        
+
+        if(response.data.length > 0)
+          {
         alert( `sucssfuly to Creat the new acount`)
-        window.location = this.state.Home;
+        window.location = this.state.Home;}
+
       });
    
   };

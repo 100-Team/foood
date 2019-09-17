@@ -9,7 +9,7 @@ export default class Searchitem extends Component {
 
 
 
-    updateloc=(bookedup)=>{
+    updateloc=(bookedup,name,phone)=>{
       axios.put(`/post/${bookedup}`)
       .then(res => {
         this.setState({ alllocation: res.data });
@@ -17,6 +17,9 @@ export default class Searchitem extends Component {
       .catch(err => {
         console.log(err);
       });
+
+      alert( `name: ${name} 
+      phone: ${phone} `)
     }
 
   
@@ -40,7 +43,7 @@ export default class Searchitem extends Component {
                </ul>
                <div className="card-body" >
                {/* <button  className="card-link">{this.props.alllocation.booking}</button> */}
-              <button className="btn btn-dark" onClick={this.updateloc.bind(this,this.props.alllocation._id)}  style={{width:"100%" , color:(this.props.alllocation.booking)?"green":"red"  }}  >BOOKING</button>
+              <button className="btn btn-dark" onClick={this.updateloc.bind(this,this.props.alllocation._id,this.props.alllocation.firstName,this.props.alllocation.phone)}  style={{width:"100%" , color:(this.props.alllocation.booking)?"green":"red"  }}  >BOOKING</button>
                </div>
                </div>{this.props.alllocation.booking}
              </div>

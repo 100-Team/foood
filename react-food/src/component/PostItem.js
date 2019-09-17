@@ -30,7 +30,7 @@ update=(bookedup,name,phone)=>{
   });
 
   alert( `name: ${name} 
-  phone: ${phone} `)
+  phone: 0${phone} `)
 }
 
  render() {

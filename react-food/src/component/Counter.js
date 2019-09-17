@@ -40,7 +40,7 @@ export default class Counter extends Component {
 </div>
 
 </div></div>
-<h4 className="col-6">Sharing</h4>
+<h4 className="col-6">#POST</h4>
 </div>
 
 

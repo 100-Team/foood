@@ -31,8 +31,9 @@ export default class Search extends Component {
     render() {
       return(
      <>
-     <div className="row" >    
+     <div className="row" style={{margin:"0 auto",width:"40%"}} >    
      <select
+     style={{border:"2px solid black"}}
             value={this.state.search}
               onChange={this.change}
               className="custom-select m-2 col-11"
