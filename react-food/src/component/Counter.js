@@ -24,12 +24,13 @@ export default class Counter extends Component {
               {/* <div className="spinner-border" style={{width: "3rem", height: "3rem" , padding:"12px" }} role="status">
   <span className="sr-only">Loading...</span><h3 style={{position:"fixed"}} >{this.state.counter}</h3> 
 </div> */}
+<div className="row">
 
 <div className="container">
 	<div className="row">
 		<div className="container">
 	<div className="row">
-	<a href="#" className="intro-banner-vdo-play-btn pinkBg" target="_blank">
+	<a href="#" className="intro-banner-vdo-play-btn pinkBg">
 <i className="glyphicon glyphicon-play whiteText" aria-hidden="true"></i>{this.state.counter}
 <span className="ripple pinkBg"></span>
 <span className="ripple pinkBg"></span>
@@ -39,7 +40,8 @@ export default class Counter extends Component {
 </div>
 
 </div></div>
-
+<h4 className="col-6">Sharing</h4>
+</div>
 
 
 
