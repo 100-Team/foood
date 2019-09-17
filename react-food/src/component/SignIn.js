@@ -66,11 +66,14 @@ export class SignIn extends Component {
 
           }
 
-            // window.location = this.state.linkLogin;
-            this.props.history.push({
-              pathname: '/input',
-              state: response.data // you recieve as this.props.location.state
-            })
+          if(response.data.length > 0)
+          {
+                      // window.location = this.state.linkLogin;
+                      this.props.history.push({
+                        pathname: '/input',
+                        state: response.data // you recieve as this.props.location.state
+                      })
+                    }
 
 
 
