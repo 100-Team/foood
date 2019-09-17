@@ -26,7 +26,7 @@ export default class Counter extends Component {
 </div> */}
 <div className="row">
 
-<div className="container">
+<div className="container col-6">
 	<div className="row">
 		<div className="container">
 	<div className="row">
