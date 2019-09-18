@@ -32,10 +32,8 @@ newuser=(firstName,lastName,phone,email,password,e)=>{
       }
         
 
-        if(response.data.length > 0)
-          {
         alert( `sucssfuly to Creat the new acount`)
-        window.location = this.state.Home;}
+        window.location = this.state.Home;
 
       });
    
